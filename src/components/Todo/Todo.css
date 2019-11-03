@@ -1,0 +1,62 @@
+/* Ini untuk menstyle Todo App listnya */
+.form input{
+  width: 100%;
+  min-width: 170px;
+  padding: 12px 20px;
+  margin: 20px 0px 0px 0px;
+  display: inline-block;
+  background-color: #fafafa;
+  border: 1px solid #ccc;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-sizing: border-box;
+  box-shadow:0 0 10px 0 rgba(0,0,0,0.05);
+}
+
+.form {
+  width: 100%;
+  min-width: 170px;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+.label{
+  margin: 0px 5px 20px 5px;
+  font-size: 10px;
+  color: #d3d3d3
+}
+
+.todo-app span{
+  width: 100%;
+  min-width: 170px;
+  counter-reset: number;
+  counter-increment: number;
+  content: "counter(number)";
+  font-size: 13px;
+  font-weight: 600;
+  text-align: left;
+  padding: 10px 20px;
+  margin: 0px 0px 0px 0px;
+  background-color: #fff;
+  display: inline-block;
+  border-bottom-style: solid;
+  border-bottom-color: #ccc;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-width: 2px;
+  box-sizing: border-box;
+}
+
+.todo-app span:hover {
+  background-color: #4d4d4d;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: line-through;
+}
+
+p{
+  font-size: 11px;
+  color: #979797;
+}

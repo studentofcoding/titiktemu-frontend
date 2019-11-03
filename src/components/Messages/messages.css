@@ -1,0 +1,93 @@
+/* This is for Messages.js */
+
+.messages-header {
+  margin-top: 80px;
+}
+
+.messages {
+  max-height: 600px;
+  height: 600px;
+  position: relative;
+  overflow-y: auto;
+}
+
+.ui.comments {
+  max-width: 100%;
+}
+
+.message__form {
+  position: fixed !important;
+  bottom: 1em;
+  margin-left: 320px !important;
+  left: 0;
+  right: 1em;
+  z-index: 1;
+}
+
+/* Channels */
+.menu-chat {
+  padding-bottom: 2em;
+}
+
+/* For Message.js */
+
+.message__self {
+  border-left: 2px solid teal;
+  padding-left: 15px;
+  margin-top: 0px;
+  padding-top: 5px;
+  padding-bottom: 1px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  -webkit-box-shadow: 0px 0px 5px 0px #f0f0f0;
+  box-shadow: 0px 0px 5px 0px #f0f0f0;
+}
+
+/* Sytling Image on Message */
+.message__image {
+  padding: 1em;
+}
+
+/* Sytling Progressbar */
+.progress__bar {
+  margin: 0.3em 0 0 0 !important;
+}
+
+.ui.header .sub.header {
+  margin-left: 20px;
+}
+
+.ui.header .icon:only-child {
+  margin-top: 20px;
+}
+
+.ui.floated.header,
+.ui[class*="left floated"].header {
+  margin-left: 15px;
+}
+
+/* 
+  ##Device = Tablets, Ipads
+  ##Screen = B/w to 1024px
+*/
+
+@media (max-width: 1024px) {
+  .message__form {
+    position: sticky;
+    width: 100% !important;
+    margin-left: 20px !important;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads
+  ##Screen = B/w to 768px
+*/
+
+@media (max-width: 768px){
+  .message__form {
+    position: sticky;
+    width: 100% !important;
+    margin-left: 20px !important;
+  }
+}

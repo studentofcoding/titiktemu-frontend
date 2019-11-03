@@ -1,0 +1,27 @@
+.ui.segment.metapanel {
+  margin-top: 20px;
+  margin-left: -15px;
+  width: 100%;
+}
+
+/* 
+  ##Device = Tablets, Ipads
+  ##Screen = B/w to 1024px
+*/
+
+@media (max-width: 1024px) {
+  .ui.segment.metapanel {
+    display: none;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads
+  ##Screen = B/w to 768px
+*/
+
+@media (max-width: 768px){
+  .ui.segment.metapanel {
+    display: none;
+  }
+}

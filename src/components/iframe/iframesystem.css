@@ -1,0 +1,8 @@
+.iframesystem {
+    display: inline;
+    display: -webkit-inline;
+    position: relative;
+    margin: 0 auto;
+    border: 2px solid #fff;
+    border-radius: 20px;
+}

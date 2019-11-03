@@ -1,0 +1,432 @@
+/*	
+	This css is global styling 
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 20px;
+  background-color: #fff;
+}
+
+/* .mobile-detected {
+  background-color: #D3D3D3;
+} */
+
+/* General Styleling*/
+.main-container {
+  margin: 0 0px;
+}
+
+
+.sub-container, footer {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.css-w2vgtg {
+  position: absolute;
+  top: calc(30% - 8px);
+  cursor: pointer;
+  padding-right: 12px;
+  right: 0;
+}
+
+hr {
+  margin: 5px 0px 20px 0px;
+}
+
+.center {
+  text-align: center;
+}
+
+/* This is the Landingpage section */
+
+#M1 {
+  flex-basis: 35%;
+  position: relative;
+}
+
+#M2 {
+  flex-basis: 65%;
+  position: relative;
+  max-width: 70%;
+  min-height: 20%;
+  height: 100%;
+}
+
+#m1 {
+  flex-basis: 30%;
+  margin: 0.5em;
+  position: relative;
+}
+
+#m2 {
+  flex-basis: 60%;
+  margin: 0.5em;
+  position: relative;
+  max-width: 70%;
+  min-height: 20%;
+  height: 100%;
+}
+
+/* styling for Navbar Component */
+
+.navbar {
+  z-index: 100;
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  top:0;
+  height: 60px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-left: 15px;
+  padding-right: 15px;
+  -webkit-box-shadow: 8px 5px 5px -1px #f0f0f0;
+  box-shadow: 8px 5px 5px -1px #f0f0f0;
+}
+
+.logo-container {
+  width: 15%;
+  margin-left: 0px;
+  margin-right: auto;
+  padding: 10px;
+  margin-top: 0px;
+  height: 100%;
+  text-align: center;
+  justify-content: flex-start;
+}
+
+.app-logo {
+  margin-left: 0px !important;
+  margin-top: -3px;
+  left: 0px;
+  width: 130px;
+  height: 30px;
+}
+
+.feedback-btn {
+  color: #000;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 0.6em;
+  width: 50%;
+  height: 50%;
+  padding-right: 20px;
+  border-right: 1px solid #000;
+  transition: 0.25s;
+  display: block;
+  cursor:pointer;
+}
+
+.feedback-btn:hover {
+  text-decoration: underline;
+}
+
+.menu-navbar {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navbar a {
+  display: flex;
+  justify-content: space-evenly;
+  color: black;
+  text-align: center;
+  margin-top: 3px;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: #ef816c;
+  text-decoration: none;
+}
+
+.signout {
+  
+  margin-top:6px;
+}
+
+.signout-btn {
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: 1rem;
+  color: #000000;
+  width: 20px;
+  height: 20px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.signout:hover {
+  color: #b61f1f;
+  text-decoration: none;
+}
+
+/* * This is for Search Section Style */
+/* Styling Menu */
+.menubar-container {
+  -ms-flex-direction: row;
+  flex-direction: row;
+  display: flex;
+  width: 100%;
+  min-width: 100px;
+  height: 100px;
+  background-color: #fff;
+  z-index: 1;
+  -webkit-position: fixed;
+  position: fixed;
+  padding: 0px 20px 20px 20px;
+  border-radius: 10px;
+  margin-left: 0px;
+  top: 0px;
+  left: 0px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  margin-bottom: 0px;
+}
+
+.toggle-component {
+  width: 13%;
+  margin-top: 18px;
+  margin-left: 20%;
+  padding: 10px;
+  text-align: center;
+}
+
+.course-switch-btn {
+  color: #000000;
+  margin-top: 5px;
+  text-align: center;
+  font-size: 0.8em;
+  width: 100%;
+  min-width: 90%;
+  border-radius: 25px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  transition: 0.25s;
+  line-height: 40px;
+}
+
+.course-switch-btn:hover {
+  background-color: teal;
+  color: #fff;
+  box-shadow: 0px 5px 10px 0 rgba(0, 128, 128, 0.40);
+  -webkit-box-shadow: 0px 5px 10px 0 rgba(0, 128, 128, 0.40);
+}
+
+.paper-switch-btn {
+  color: #000000;
+  margin-top: 5px;
+  text-align: center;
+  font-size: 0.8em;
+  width: 100%;
+  min-width: 50%;
+  border-radius: 25px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  transition: 0.25s;
+  line-height: 40px;
+}
+
+.paper-switch-btn:hover {
+  background-color: #E43F35;
+  color: #fff;
+  box-shadow: 0px 5px 10px 0 rgba(228, 62, 53, 0.400);
+  -webkit-box-shadow: 0px 5px 10px 0 rgba(228, 62, 53, 0.400);
+}
+
+.search-component {
+  width: 47%;
+  min-width: 30%;
+  margin-top: 20px;
+  padding: 10px;
+  margin-left: 0px;
+}
+
+.search-bar {
+  border: 2px solid #E43F35;
+  border-radius: 3px;
+}
+
+.spotify-component {
+  width: 15%;
+  height: 100%;
+  margin-top: 0px;
+  margin-left: 20px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 25px;
+}
+
+/* *This is the Dekstop menu-bar section */
+
+.menubar {
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 60px;
+  min-width: 50px;
+  height: 100%;
+  margin-left: 1000px;
+  background-color: #fff;
+  z-index: 0;
+  -webkit-position: fixed;
+  position: fixed;
+  -webkit-box-shadow: 8px 16px 10px 8px #D3D3D3;
+  box-shadow: 8px 16px 10px 8px #D3D3D3;
+  padding: 0px 20px 20px 20px;
+  margin-left: 0px;
+  right: 0;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/** This is the Dekstop result-container section */
+
+.result-container {
+  width: 80%;
+  margin: 100px -320px 0 0;
+}
+
+.result-container-optional {
+  min-width: 85px;
+}
+
+.revenue-time-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.result-list-info {
+  max-width: 94%;
+  margin-right: 120px;
+}
+
+.filters a {
+  padding-left: 200px;
+  background-color: #D3D3D3;
+}
+
+.filters a:hover {
+  background-color: #D3D3D3;
+}
+
+/* 
+  //  Responsive 13inch Laptop
+*/
+
+@media (max-width:1378) {
+
+}
+
+/* 
+  //  Responsive Course & Paper Page 
+  //  for Tab Device 
+*/
+@media (max-width: 1024px) {
+  .navbar-mobile {
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    justify-content: space-evenly;
+    -webkit-position: fixed;
+    position: fixed;
+    bottom:0;
+    height: 60px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .menu-mobile {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+  }
+
+  .spotify-component {
+    display: none;
+  }
+
+  .toggle-component {
+    width: 20%;
+    margin-top: 18px;
+    margin-left: 12%;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .menu-navbar {
+    display: none;
+  }
+}
+
+/* Responsive styling Mobile */
+@media (max-width: 768px) {
+  .navbar {
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 2;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    left:0;
+  }
+
+  .navbar-mobile {
+    z-index: 100;
+    background-color: #fff;
+    color: #000;
+    display: block;
+    justify-content: space-evenly;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom:0;
+    left:0;
+    height: 60px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .spotify-component {
+    display: none;
+  }
+
+  .toggle-component {
+    width: 20%;
+    margin-top: 18px;
+    margin-left: 12%;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .menu-navbar {
+    display: none;
+  }
+
+  .menu-mobile {
+    display: flex;
+    margin-left: auto;
+  }
+}
+

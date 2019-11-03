@@ -1,0 +1,14 @@
+/* 
+  ##Device = Laptop 13inch
+  ##Screen = B/w to 1378px
+*/
+
+@media (max-width: 1378px) {
+  .ui.large.vertical.menu {
+    width: 15rem !important;
+    font-size: 0.85rem !important;
+  }
+  h3.ui.inverted.header {
+    font-size: 100%;
+  }
+}

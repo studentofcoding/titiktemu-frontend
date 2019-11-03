@@ -1,0 +1,132 @@
+.chat {
+  margin-top: 80px;
+}
+
+.ui.menu.fixed,
+.ui[class*="left fixed"].menu {
+  top: 75px;
+  left: -60px;
+  margin: 0px;
+}
+
+.ui.large.vertical.menu {
+  width: 21rem;
+}
+
+.ui[class*="very thin"].left.sidebar,
+.ui[class*="very thin"].right.sidebar {
+  width: 60px;
+  left: -60px;
+}
+
+.ui.sidebar {
+  top:61px;
+}
+
+/* 
+  ##  Device      = Laptop 13inch
+  ##  Screen      = 1378px
+  .chat-column    = chat cont.
+  .ui.comments    = chat font cont.
+  .messages       = messages comp.
+  .message__form  = form chat comp. 
+*/
+
+@media (max-width: 1378px) {
+  .chat-column {
+    margin-left: 240px !important;
+    margin-right: 20px !important;
+    margin-top: 20px !important;
+  }
+  .ui.comments {
+    font-size: 0.85rem;
+  }
+  .messages {
+    height: 320px !important;
+  }
+  .message__form {
+    margin-left: 240px !important; 
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads
+  ##Screen = B/w to 1024px
+  .chat-column    = chat cont.
+  .ui.comments    = chat font cont.
+  .messages       = messages comp.
+  .message__form  = form chat comp.
+  .ui.two.button  = button form chat comp.
+  .ui.menu.fixed  = sidepanel comp.
+*/
+
+@media (max-width: 1024px) {
+  .chat-column {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+    margin-top: 20px !important;
+  }
+  .ui.comments {
+    font-size: 0.85rem;
+  }
+  .messages {
+    height: 520px !important;
+    max-width: 1024px !important;
+  }
+  .message__form {
+    margin-left: 0px !important;
+    margin-bottom: -40px !important;
+    margin-top: 30px !important;
+    max-width: 730px !important;
+    position: relative !important;
+    padding: 0;
+  }
+  .ui.two.buttons {
+    display:none;
+  }
+  .column {
+    width: 1024px !important;
+  }
+  .ui.menu.fixed,
+  .ui[class*="left fixed"].menu {
+    display: none;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads
+  ##Screen = B/w to 768px
+*/
+
+@media (max-width: 768px){
+  .column {
+    width: 768px !important;
+  }
+  .ui.menu.fixed,
+  .ui[class*="left fixed"].menu {
+    display: none;
+  }
+  .chat-column {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+    margin-top: 20px !important;
+  }
+  .ui.comments {
+    font-size: 0.85rem;
+  }
+  .messages {
+    height: 520px !important;
+    max-width: 1024px !important;
+  }
+  .message__form {
+    margin-left: 0px !important;
+    margin-bottom: -40px !important;
+    margin-top: 30px !important;
+    max-width: 730px !important;
+    position: relative !important;
+    padding: 0;
+  }
+  .ui.two.buttons {
+    display:none;
+  }
+}

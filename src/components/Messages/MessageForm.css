@@ -1,0 +1,21 @@
+.btn-upload {
+  border-left: 2px solid teal;
+}
+
+.ui.input>input {
+  border: 1px solid #01bbbb77;
+  color: #000
+}
+
+.ui.input>input::placeholder {
+  color: #4d4d4d86
+}
+
+.ui.label {
+  color: white;
+  background-color: rgb(0, 160, 160)
+}
+
+.emojipicker {
+  position: absolute;
+}

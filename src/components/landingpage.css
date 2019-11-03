@@ -1,0 +1,271 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 20px;
+  background-color: #fff;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.landingpage {
+    padding-top: 35px;
+    padding-bottom: 100px;
+    background-attachment: scroll;
+    background-position: left top;
+    background-repeat: repeat-y;
+    position: relative;
+    display: block;
+    min-height: 768px;
+    height: 100%;
+    font-family: 'Nunito-Sans', sans-serif;
+    font-size: 24px;
+    opacity: 1;
+    background-size: contain;
+    line-height: 50px;
+    padding: 35px 0 100px 0;
+    border: solid #fff;
+    font-weight: 400;
+}
+
+.container-width {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    min-height: 768px;
+    height: 100%;
+}
+
+
+.row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    padding: 10px;
+}
+
+.cell {
+    min-height: 75px;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+#ii87nh {
+    flex-basis: 65%;
+    position: relative;
+    max-width: 70%;
+    min-height: 20%;
+    height: 100%;
+}
+
+#iybx47 {
+    flex-basis: 35%;
+    position: relative;
+}
+
+.button-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    padding: 10px;
+    max-width: 460px;
+}
+
+#l1 {
+    flex-basis: 65%;
+    margin-right: 0.1em;
+    position: relative;
+    max-width: 70%;
+    min-height: 20%;
+    height: 100%;
+}
+
+#s1 {
+    flex-basis: 35%;
+    position: relative;
+}
+
+.BG-landing {
+    height: 100%;
+    float: none;
+    position: static;
+    text-align: left;
+    padding: 20px 20px 20px 20px;
+    margin: 60px 0 50px 60px;
+    width: 100%;
+    color: #000000;
+    min-height: 200px;
+    max-width: 80%;
+}
+
+.landing_title {
+    padding: 10px;
+    font-size: 56px;
+    line-height: normal;
+    width: 100%;
+    max-width: 500px;
+    font-weight: 600;
+    color: #240505;
+    letter-spacing: normal;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 240px 0 0 0;
+    text-decoration: blink;
+}
+
+.landing_sub-title {
+    padding: 10px;
+    font-size: 0.38em;
+    line-height: normal;
+    width: 100%;
+    max-width: 500px;
+    font-weight: 300;
+    color: #240505;
+    letter-spacing: normal;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0 0 0 0;
+}
+
+.signup-btn {
+    color: #000000;
+    text-align: center;
+    font-size: 0.8em;
+    width: 100%;
+    min-width: 50%;
+    border-radius: 25px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    box-shadow: 2px 5px 10px 0 rgba(228, 62, 53, 0.39);
+}
+
+.signup-btn:hover {
+    background-color: #E43F35;
+    color: #fff;
+    transition: 0.25s;
+}
+
+.signup-btn:active {
+    background-color: rgb(155, 41, 35);
+    transition: 0.5s;
+    color: #fff;
+}
+
+.login-btn {
+    color: #000000;
+    text-align: center;
+    font-size: 0.8em;
+    width: 100%;
+    min-width: 50%;
+    border-radius: 25px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    box-shadow: -2px 5px 10px 0 rgba(228, 62, 53, 0.39);
+}
+
+.login-btn:hover {
+    background-color: #E43F35;
+    color: #fff;
+    transition: 0.25s;
+}
+
+.login-btn:active {
+    background-color: rgb(155, 41, 35);
+    transition: 0.5s;
+    color: #fff;
+}
+
+/* 
+  ##  Device      = Laptop 13inch
+  ##  Screen      = 1378px
+  .chat-column    = chat cont.
+  .ui.comments    = chat font cont.
+  .messages       = messages comp.
+  .message__form  = form chat comp. 
+*/
+
+@media (max-width: 1378px) {
+    .landingpage {
+        height: 768 !important;
+        padding-top: 35px;
+        padding-bottom: 25px !important;
+        position: relative;
+        display: block;
+    }
+
+    #ii87nh {
+        flex-basis: 65%;
+        position: relative;
+        max-width: 100%;
+        min-height: 20%;
+        height: 100%;
+    }
+
+    #iybx47 {
+        flex-basis: 30%;
+        position: relative;
+    }
+
+    .landing_title {
+        padding: 10px;
+        font-size: 48px;
+    }
+
+    .BG-landing {
+        margin: 10px 0 50px 20px !important;
+    }
+  }
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .BG-landing {
+    height: 500px !important;
+    position: fixed;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+    margin-top: -50px;
+    width: 700px !important;
+    color: #000000;
+    min-height: 200px;
+    }
+    
+    .row {
+        flex-wrap: wrap;
+    }
+
+    .landing_title {
+    padding: 10px;
+    font-size: 56px;
+    line-height: normal;
+    width: 100%;
+    max-width: 500px;
+    font-weight: 600;
+    color: #240505;
+    letter-spacing: normal;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 420px 0 0 0;
+    margin-left: 20%;
+    text-decoration: none;
+    }
+
+    .button-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    padding: 10px;
+    max-width: 460px;
+    margin-left: 20%;
+    }
+}
+

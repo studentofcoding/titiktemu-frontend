@@ -1,0 +1,63 @@
+.skeleton_chat {
+  position: relative;
+  overflow: hidden;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.skeleton::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  animation: sweep 1s infinite;
+  background-image: linear-gradient(
+    to left,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+}
+
+@keyframes sweep {
+  0% {
+    transform: translateX(-200%);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+.skeleton__avatar {
+  height: 35px;
+  width: 35px;
+  border-radius: 5px;
+  background-color: rgba(57,57,57,0.4);
+}
+
+.skeleton__author {
+  height: 10px;
+  width: 120px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 30px;
+  left: 40px;
+  right: 0;
+  background-color: rgba(57, 57, 57, 0.4);
+}
+
+.skeleton__details {
+  height: 20px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 5px;
+  left: 40px;
+  right: 20px;
+  background-color: rgba(57, 57, 57, 0.4);
+}
