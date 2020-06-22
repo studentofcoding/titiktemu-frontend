@@ -281,6 +281,7 @@ class Messages extends Component {
           privateChannel={privateChannel}
           isChannelFavorite={isChannelFavorite}
           handleFavorite={this.handleFavorite}
+          style={{ height: "200px !important" }}
         />
         
         <Segment style={{ width: "800" }}>

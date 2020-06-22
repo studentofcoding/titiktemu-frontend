@@ -27,8 +27,8 @@
 
 .typing__dot {
   float: left;
-  width: 7px;
-  height: 7px;
+  width: 5px;
+  height: 5px;
   margin: 0 2.5px;
   color: darkgray;
   background-color: #008080;

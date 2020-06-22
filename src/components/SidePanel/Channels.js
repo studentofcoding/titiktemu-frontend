@@ -196,13 +196,13 @@ class Channels extends Component {
 
     return (
       <React.Fragment>
+        <Menu.Item style={{ opacity: 1, fontStyle: 'bold' }}>
+          <span>
+            CHANNELS
+          </span>{" "}
+          ({channels.length}) <Icon name="add circle" onClick={this.openModal}/>
+        </Menu.Item>
         <Menu.Menu style={{ paddingBottom: '2em', marginBottom: "20"}}>
-          <Menu.Item style={{ opacity: 1, fontStyle: 'bold' }}>
-            <span>
-              CHANNELS
-            </span>{" "}
-            ({channels.length}) <Icon name="add circle" onClick={this.openModal}/>
-          </Menu.Item>
           {this.displayChannels(channels)}
         </Menu.Menu>
 

@@ -22,25 +22,34 @@
   left: 0;
   right: 1em;
   z-index: 1;
+  font-size: 0.7rem !important;
 }
 
 /* Channels */
 .menu-chat {
   padding-bottom: 2em;
+  overflow: auto;
+  max-height: 200px;
+  position: relative;
+  overflow-y: auto;
 }
 
 /* For Message.js */
 
 .message__self {
-  border-left: 2px solid teal;
+  border-left: 1px solid teal;
   padding-left: 15px;
   margin-top: 0px;
   padding-top: 5px;
   padding-bottom: 1px;
-  border-bottom-right-radius: 10px;
-  border-top-right-radius: 10px;
-  -webkit-box-shadow: 0px 0px 5px 0px #f0f0f0;
-  box-shadow: 0px 0px 5px 0px #f0f0f0;
+  /* border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px; */
+  /* -webkit-box-shadow: 0px 0px 5px 0px #f0f0f0;
+  box-shadow: 0px 0px 5px 0px #f0f0f0; */
+}
+
+.chat-avatar {
+  border-radius: 50px;
 }
 
 /* Sytling Image on Message */

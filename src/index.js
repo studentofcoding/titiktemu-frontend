@@ -17,8 +17,11 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import rootReducer from './reducers';
 import { setUser, clearUser } from './actions';
 import Spinner from './loadingspinner';
+
+/*Import Windows and Apps */
 import paper from './components/paper';
-import course from './components/course';
+import course from './components/App/course';
+import windows from './components/App/windows';
 import Mongo from './components/mongo';
 
 const store = createStore(rootReducer, composeWithDevTools());
@@ -50,6 +53,7 @@ class Root extends Component {
             <Route exact path="/login" component={Login} />
             <Route exact path="/course" component={course} />
             <Route exact path="/paper" component={paper} />
+            <Route exact path="/windows" component={windows} />
             <Route component={nothinghere} />
           </Switch>
         </div>

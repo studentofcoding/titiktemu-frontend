@@ -71,15 +71,17 @@ class Favorite extends Component {
     const { favChannels } = this.state;
 
     return (
-      <Menu.Menu style={{ paddingBottom: '2em', marginBottom: "20"}}>
-          <Menu.Item style={{ opacity: 1, fontStyle: 'bold' }}>
-            <span>
-              FAVORITE
-            </span>{" "}
-            ({favChannels.length}) <Icon name="add circle" onClick={this.openModal}/>
-          </Menu.Item>
+      <>
+        <Menu.Item style={{ opacity: 1, fontStyle: 'bold' }}>
+          <span>
+            FAVORITE
+          </span>{" "}
+          ({favChannels.length}) <Icon name="add circle" onClick={this.openModal}/>
+        </Menu.Item>
+        <Menu.Menu style={{ paddingBottom: '2em', marginBottom: "20"}}>
           {this.displayChannels(favChannels)}
         </Menu.Menu>
+      </>
     )
   }
 }

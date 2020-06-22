@@ -16,9 +16,9 @@ class home extends Component {
                   />
                 </div>
                 <h1 className="home-desc">Bost your knowledge and find your acedemical needs</h1>
-                <NavLink exact to="/paper">
-                  <Button className="Paper">
-                    Search your paper here
+                <NavLink exact to="/windows">
+                  <Button className="windows">
+                    Search your windows here
                   </Button>
                 </NavLink>
               </div>

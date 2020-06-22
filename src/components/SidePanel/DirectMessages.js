@@ -96,31 +96,34 @@ class DirectMessages extends Component {
 
 
     return (
-      <Menu.Menu className="menu-chat">
+      <>
         <Menu.Item>
           <span>
             DIRECT MESSAGES
           </span>{' '}
           ({users.length})
         </Menu.Item>
-        {/* Users DM Send Method */}
-        {users.map(user => (
-          <Menu.Item
-            key={user.uid}
-            active={user.uid === activeChannel}
-            onClick={() => this.changeChannel(user)}
-            style={{ opacity: 0.9 }}
-          >
-            @ {user.name}
-            <Icon
-              name="circle thin"
-              color={this.isUserOnline(user)
-                ? 'teal'
-                : 'grey'}
-            />
-          </Menu.Item>
-        ))}
-      </Menu.Menu>
+
+        <Menu.Menu className="menu-chat">
+          {/* Users DM Send Method */}
+          {users.map(user => (
+            <Menu.Item
+              key={user.uid}
+              active={user.uid === activeChannel}
+              onClick={() => this.changeChannel(user)}
+              style={{ opacity: 0.9 }}
+            >
+              @ {user.name}
+              <Icon
+                name="circle thin"
+                color={this.isUserOnline(user)
+                  ? 'teal'
+                  : 'grey'}
+              />
+            </Menu.Item>
+          ))}
+        </Menu.Menu>
+      </>
     );
   }
 }
