@@ -34,7 +34,7 @@ class landingpage extends Component {
                 </div>
                 <div className="cell" id="iybx47">
                     <div className="landing_title">
-                        "The Internet is our Playground"
+                        "Your personal space for learning"
                         {/* <p className="landing_sub-title">
                             Temukan, Diskusikan, dan
                             Bangun Passionmu

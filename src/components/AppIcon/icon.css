@@ -1,0 +1,18 @@
+/* #dashboardIcon, #forumIcon {
+    position: relative;
+    z-index: 9;
+    text-align: center;
+    border-radius: 15%;
+    background: #E95C00;
+    border-radius: 15%;
+    box-shadow: inset 4px 4px 10px #923800, inset -4px -4px 10px #E95C00;
+    transform: perspective(100px) rotate(-30deg) skew(25deg) translate(0,0);
+    transition: .5s;
+}
+  
+#dashboardIcon_dragable, #forumIcon_dragable {
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    color: #e9e9e9;
+} */
