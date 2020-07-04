@@ -20,8 +20,6 @@ import Spinner from './loadingspinner';
 /*Import Windows and Apps */
 import paper from './components/paper';
 import course from './components/App/course';
-import windows from './components/App/windows';
-import Mongo from './components/mongo';
 
 const store = createStore(rootReducer, composeWithDevTools());
 
