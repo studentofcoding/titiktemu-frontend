@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Menu } from 'semantic-ui-react';
 import './SidePanel.css';
+import '../chat.css';
+
 import UserPanel from './UserPanel';
 import Channels from './Channels';
 import DirectMessages from './DirectMessages';
@@ -13,15 +15,11 @@ class SidePanel extends Component {
     return (
       <Menu
         size="large"
-        inverted
-        fixed="left"
         vertical
-        style = {
-          {
-            background: '#276366',
-            fontSize: '1.1rem',
-          }
-        }
+        className="chat-sidebar"
+        style={{
+          background: "#e6e7ee"
+        }}
       >
         <UserPanel currentUser={currentUser} />
         <Favorite currentUser={currentUser} />

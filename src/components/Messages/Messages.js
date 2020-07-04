@@ -284,7 +284,7 @@ class Messages extends Component {
           style={{ height: "200px !important" }}
         />
         
-        <Segment style={{ width: "800" }}>
+        <Segment id="message-container" style={{ width: "800" }}>
           {/* Checking if the search term is active */}
           <Comment.Group className="messages">
             {this.displayMessageSkeleton(messagesLoading)}

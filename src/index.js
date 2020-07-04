@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 import firebase from './components/firebase';
-import home from './components/Home';
 import landingpage from './components/landingpage';
 import event from './components/event';
 import nothinghere from './components/nothinghere';
@@ -44,8 +43,7 @@ class Root extends Component {
         <div>
           {/*This is the function to Route to Page (via switch)*/}
           <Switch>
-            <Route exact path="/" component={home} />
-            <Route exact path="/mongo" component={Mongo}/>
+            <Route exact path="/" component={chat} />
             <Route exact path="/landingpage" component={landingpage} />
             <Route exact path="/event" component={event} />
             <Route exact path="/chat" component={chat} />
@@ -53,7 +51,6 @@ class Root extends Component {
             <Route exact path="/login" component={Login} />
             <Route exact path="/course" component={course} />
             <Route exact path="/paper" component={paper} />
-            <Route exact path="/windows" component={windows} />
             <Route component={nothinghere} />
           </Switch>
         </div>

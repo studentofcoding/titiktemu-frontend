@@ -110,11 +110,7 @@ class UserPanel extends Component {
     const { user, modal, previewImage, croppedImage } = this.state;
 
     return (
-      < Grid style = {
-        {
-          background: "#276366"
-        }
-      } >
+      <Grid>
         <Grid.Column>
           {/* Chat App Header */}
           {/* <Grid.Row style={{ padding: "1.2em", marginLeft: 40, marginTop: 20 }}>

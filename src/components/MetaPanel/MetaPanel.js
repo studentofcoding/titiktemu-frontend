@@ -46,7 +46,7 @@ class MetaPanel extends Component {
 
     return (
       <Segment
-        className="metapanel"
+        id="metapanel"
         loading={!channel}
       >
         <Header as="h4" attached="top">

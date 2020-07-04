@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 //import Navbar from './components/Navbar';
 import firebase from './components/firebase';
 import home from './components/home';
+import windows from './components/App/windows';
 import landingpage from './components/landingpage';
 import event from './components/event';
 import nothinghere from './components/nothinghere';
@@ -26,7 +27,7 @@ class App extends Component {
           {/*This is the function to Route to Page (via switch)*/}
           <Switch>
             <Route exact path="/" component={LoginContainers}/>
-            <Route exact path="/" component={home} />
+            <Route exact path="/" component={windows} />
             <Route exact path="/landingpage" component={landingpage} />
             <Route exact path="/event" component={event} />
             <Route exact path="/chat" component={chat} />

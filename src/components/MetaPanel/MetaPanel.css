@@ -1,6 +1,4 @@
-.ui.segment.metapanel {
-  margin-top: 20px;
-  margin-left: -15px;
+#metapanel {
   width: 100%;
 }
 
@@ -10,7 +8,7 @@
 */
 
 @media (max-width: 1024px) {
-  .ui.segment.metapanel {
+  #metapanel {
     display: none;
   }
 }
@@ -21,7 +19,7 @@
 */
 
 @media (max-width: 768px){
-  .ui.segment.metapanel {
+  #metapanel {
     display: none;
   }
 }

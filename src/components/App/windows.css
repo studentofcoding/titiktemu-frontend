@@ -54,13 +54,29 @@ body {
 #home ul li div {
     box-shadow: 6px 6px 12px #b8b9be,-6px -6px 12px #fff;
     border: .0625rem solid #fafbfe;
+    border-radius: 25%;
     position: relative;
     z-index: 9;
     text-align: center;
     background: #e6e7ee;
-    border-radius: 25%;
     /* transform: perspective(100px) rotate(-30deg) skew(20deg) skewY(0deg) translate(0,0); */
     transition: .5s;
+}
+
+#home ul li div:hover {
+    transform: translateX(-2px) translateY(2px);
+    box-shadow: 0px 0px 50px #b8b9be,0px 0px 50px #fff;
+    transition-duration: .1s;
+}
+
+#home ul li div:active {
+    transform: translateX(-2px) translateY(2px);
+    box-shadow: inset 6px 6px 12px #b8b9be, inset -6px -6px 12px #fff;
+}
+
+#home ul li div:focus {
+    transform: translateX(-2px) translateY(2px);
+    box-shadow: inset 6px 6px 12px #b8b9be, inset -6px -6px 12px #fff;
 }
 
 /* #dashboardIcon, #forumIcon {

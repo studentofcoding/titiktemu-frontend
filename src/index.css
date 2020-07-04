@@ -14,9 +14,34 @@ body {
   background-color: #D3D3D3;
 } */
 
+/* Font styling */
+span {
+  color: black;
+}
+
 /* General Styleling*/
 .main-container {
   margin: 0 0px;
+}
+
+.body-container {
+  margin: 3%;
+}
+
+.inner-container {
+  box-shadow: inset 4px 4px 8px #b8b9be, inset -4px -4px 8px #fff;
+  border: .0625rem solid #fafbfe;
+  border-radius: 15px;
+}
+
+.nav-app {
+  position: absolute;
+  top: 90%;
+  left: 86%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 

@@ -1,6 +1,3 @@
-.chat {
-  margin-top: 80px;
-}
 
 .ui.menu.fixed,
 .ui[class*="left fixed"].menu {
@@ -23,6 +20,51 @@
   top:61px;
 }
 
+/* Chat sidebar */
+
+.chat-sidebar {
+  /* box-shadow: 1px 1px 15px #b8b9be,-1px -1px 15px #fff !important; */
+  box-shadow: -12px -1px 12px #b8b9be !important;
+  /* border: .0625rem solid #fafbfe !important; */
+  border-right-style: none !important;
+  border-top-left-radius: 15px !important;
+  border-bottom-left-radius: 15px !important;
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  font-size: 1.1rem !important;
+  margin: 1rem !important;
+  background: #e6e7ee !important;
+}
+
+.ui.segment {
+  box-shadow: none !important;
+  border: none !important;
+  background: #e6e7ee !important;
+}
+
+.message__form {
+  position: relative !important;
+  z-index: 1;
+  font-size: 0.7rem !important;
+}
+
+#message-container {
+  box-shadow: inset 1px 1px 15px #b8b9be, inset -1px -1px 15px #fff, 1px 1px 15px #b8b9be,-1px -1px 15px #fff !important;
+  border: .0625rem solid #fafbfe !important;
+  background: #e6e7ee !important;
+}
+
+#metapanel {
+  box-shadow: 10px 1px 10px #b8b9be !important;
+  /* border: .0625rem solid #fafbfe !important; */
+  border-left-style: none !important;
+  border-top-right-radius: 15px !important;
+  border-bottom-right-radius: 15px !important;
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  background: #e6e7ee !important;
+}
+
 /* 
   ##  Device      = Laptop 13inch
   ##  Screen      = 1378px
@@ -33,19 +75,16 @@
 */
 
 @media (max-width: 1378px) {
-  .chat-column {
+  /* .chat-column {
     margin-left: 240px !important;
     margin-right: 20px !important;
     margin-top: 20px !important;
-  }
+  } */
   .ui.comments {
     font-size: 0.85rem;
   }
   .messages {
     height: 320px !important;
-  }
-  .message__form {
-    margin-left: 240px !important; 
   }
 }
 
@@ -72,14 +111,6 @@
   .messages {
     height: 520px !important;
     max-width: 1024px !important;
-  }
-  .message__form {
-    margin-left: 0px !important;
-    margin-bottom: -40px !important;
-    margin-top: 30px !important;
-    max-width: 730px !important;
-    position: relative !important;
-    padding: 0;
   }
   .ui.two.buttons {
     display:none;
@@ -117,14 +148,6 @@
   .messages {
     height: 520px !important;
     max-width: 1024px !important;
-  }
-  .message__form {
-    margin-left: 0px !important;
-    margin-bottom: -40px !important;
-    margin-top: 30px !important;
-    max-width: 730px !important;
-    position: relative !important;
-    padding: 0;
   }
   .ui.two.buttons {
     display:none;
