@@ -1,0 +1,47 @@
+type Account {
+    email: String! @unique
+}
+
+type Profile {
+    account: Account! @relation
+    username: String!
+    bio: String!
+    avatar: String!
+    skills: [ Skill! ] @relation
+    projects: [ Project! ] @relation
+    interest: [ Interest! ] @relation
+    contribution: [ Contribution! ] @relation
+}
+
+type Skill {
+    name: String!
+    profile: [ Profile! ] @relation
+}
+
+type Project {
+    name: String!
+    profile: [ Profile! ] @relation
+}
+
+type Contribution {
+    name: String!
+    profile: [ Profile! ] @relation
+}
+
+type Interest {
+    name: String!
+    profile: [ Profile! ] @relation
+}
+
+type Query {
+    allProfile: [Profile!]
+    accountsByEmail(email: String!): [Account!]!
+    skillsByName(name: String!): [Skill!]!
+    projectsByName(name: String!): [Project!]!
+    contributionsByName(name: String!): [Contribution!]!
+}
+
+type Mutation {
+    register(email: String!, password: String!): Account! @resolver
+    login(email: String!, password: String!): String! @resolver
+}
