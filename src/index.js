@@ -20,6 +20,7 @@ import Spinner from './loadingspinner';
 /*Import Windows and Apps */
 import paper from './components/paper';
 import course from './components/App/course';
+import windows from './components/App/windows';
 
 const store = createStore(rootReducer, composeWithDevTools());
 
@@ -41,7 +42,7 @@ class Root extends Component {
         <div>
           {/*This is the function to Route to Page (via switch)*/}
           <Switch>
-            <Route exact path="/" component={chat} />
+            <Route exact path="/" component={windows} />
             <Route exact path="/landingpage" component={landingpage} />
             <Route exact path="/event" component={event} />
             <Route exact path="/chat" component={chat} />

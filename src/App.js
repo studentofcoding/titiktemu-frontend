@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 //import Navbar from './components/Navbar';
 import firebase from './components/firebase';
-import home from './components/home';
+// import home from './components/home';
 import windows from './components/App/windows';
 import landingpage from './components/landingpage';
 import event from './components/event';
