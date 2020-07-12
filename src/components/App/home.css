@@ -1,0 +1,109 @@
+body {
+    background: #fff !important;
+}
+
+/* #home ul {
+    position: absolute;
+    top: 92%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#home ul li {
+    list-style: none;
+    margin: 0 30px;
+}
+
+#home ul li div {
+    box-shadow: 6px 6px 12px #b8b9be,-6px -6px 12px #fff;
+    border: .0625rem solid #fafbfe;
+    border-radius: 25%;
+    position: relative;
+    z-index: 9;
+    text-align: center;
+    background: #e6e7ee;
+    transition: .5s;
+}
+
+#home ul li div:hover {
+    transform: translateX(-2px) translateY(2px);
+    box-shadow: 0px 0px 50px #b8b9be,0px 0px 50px #fff;
+    transition-duration: .1s;
+}
+
+#home ul li div:active {
+    transform: translateX(-2px) translateY(2px);
+    box-shadow: inset 6px 6px 12px #b8b9be, inset -6px -6px 12px #fff;
+}
+
+#home ul li div:focus {
+    transform: translateX(-2px) translateY(2px);
+    box-shadow: inset 6px 6px 12px #b8b9be, inset -6px -6px 12px #fff;
+}
+  
+#home ul li div i {
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    color: #0e0c0c;
+} */
+
+/* Scroll Banner */
+.scroll-left {
+    top: 0%;
+    height: 50px;	
+    overflow: hidden;
+    position: relative;
+    color: black;
+    width: 100%;
+    white-space: nowrap;
+}
+.scroll-left p {
+    position: absolute;
+    white-space: nowrap;
+    width: 100vw;
+    height: 60%;
+    margin: 0;
+    line-height: 27px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    /* box-shadow: inset 0px 0px 20px 0px #b8b9be; */
+    box-shadow: inset 6px 6px 12px #b8b9be, inset -6px -6px 12px #fff;
+    background: #e6e7ee;
+    border-radius: 8px;
+    border: .0625rem solid #fff;
+
+    /* Starting position */
+    -moz-transform:translateX(0%);
+    -webkit-transform:translateX(0%);	
+    transform:translateX(0%);
+    /* Apply animation to this element */	
+    -moz-animation: scroll-left 24s linear infinite;
+    -webkit-animation: scroll-left 24s linear infinite;
+    animation: scroll-left 24s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes scroll-left {
+    0%   { -moz-transform: translateX(100%); }
+    100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes scroll-left {
+    0%   { -webkit-transform: translateX(100%); }
+    100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes scroll-left {
+    0%   { 
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%); 		
+    }
+    100% { 
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%); 
+    }
+}

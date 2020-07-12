@@ -6,11 +6,8 @@ import {
 import './course.css';
 //import index.css for global container
 import '../../index.css';
-import MainTodoApp from '../Todo/MainTodoApp';
-import System from '../iframe/iframesystem';
-
-//Navbar Component
-import Navbar from '../Navbar';
+import MainTodoApp from './dashboard/Todo/MainTodoApp';
+import System from './additional/iframe/iframesystem';
 
 
 
@@ -36,7 +33,6 @@ class course extends Component {
   render() {
     return (
       <div className="main-container"> 
-        <Navbar />
         {/*Main Container that import ReactiveBase from appbase.io*/}
         
         <ReactiveBase
