@@ -6,6 +6,8 @@ import { Link } from 'react-router-dom';
 import md5 from 'md5';
 import './registerlogin.css';
 
+const db = firebase.database()
+
 class Register extends React.Component {
     state = {
         username: "",
@@ -14,7 +16,8 @@ class Register extends React.Component {
         passwordConfirmation: "",
         errors: [],
         loading: false,
-        usersRef: firebase.database().ref('users')
+        usersRef: db.ref('users')
+        // usersRef: firebase.firestore().collection('users').get()
     };
 
     //function to check wether the form is valid

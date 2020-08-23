@@ -9,7 +9,7 @@ import MessageForm from './MessageForm';
 import Message from './Message';
 import firebase from 'firebase';
 
- /* sytle for messages */
+/* sytle for messages */
 import './messages.css';
 
 /* Typing */
@@ -19,24 +19,25 @@ import Typing from './Typing';
 /* Skeleton */
 import SkeletonChat from './SkeletonChat';
 
+const db = firebase.database()
 class Messages extends Component {
   state = {
     privateChannel: this.props.isPrivateChannel,
-    privateMessagesRef: firebase.database().ref('privateMessages'),
-    messagesRef: firebase.database().ref("messages"),
     messages: [],
     messagesLoading: true,
     channel: this.props.currentChannel,
     isChannelFavorite: false,
     user: this.props.currentUser,
-    usersRef: firebase.database().ref('users'),
     numUniqueUsers: '',
     searchTerm: '',
     searchLoading: false,
     searchResults: [],
-    typingRef: firebase.database().ref('userTyping'),
     typingUsers: [],
-    connectedRef: firebase.database().ref('.info/connected')
+    usersRef: db.ref('users'),
+    typingRef: db.ref('chat/userTyping'),
+    privateMessagesRef: db.ref('chat/privateMessages'),
+    messagesRef: db.ref('chat/messages'),
+    connectedRef: db.ref('chat/info/connected')
   };
 
   componentDidMount() {
@@ -108,7 +109,7 @@ class Messages extends Component {
       this.setState({
         messages: loadedMessages,
         messagesLoading: false
-      });
+    });
       this.countUniqueUsers(loadedMessages);
       this.setTopPosters(loadedMessages);
     });
@@ -143,7 +144,6 @@ class Messages extends Component {
   favChannel = () => {
     if (this.state.isChannelFavorite) {
       this.state.usersRef
-        .child(`${this.state.user.uid}/favorite`)
         .update({
           [this.state.channel.id]: {
             name: this.state.channel.name,

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import firebase from 'firebase';
+import { db } from '../../../../firebase';
 import { Sidebar, Menu, Divider, Button, Modal, Icon, Label, Segment } from 'semantic-ui-react';
 import { SliderPicker } from 'react-color';
 
@@ -9,7 +9,8 @@ class ColorPanel extends Component {
     primary: "",
     secondary: "",
     user: this.props.currentUser,
-    usersRef: firebase.database().ref('users')
+    usersRef: db.ref('users'),
+    // usersRef: firebase.firestore().collection('titiktemu_central').ref('users')
   };
 
   handlePrimaryColor = color => this.setState({ primary: color.hex });

@@ -25,6 +25,13 @@ const Navigation = () => {
             <i className="fas fa-bullhorn"></i>
           </div>
         </li>
+        <NavLink exact to="/dashboard">
+          <li>
+            <div id="forumIcon">
+              <i className="fas fa-video-camera"></i>
+            </div>
+          </li>
+        </NavLink>
       </ul>
     </div>
   )

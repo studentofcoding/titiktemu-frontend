@@ -8,7 +8,7 @@ import uuidv4 from 'uuid/v4';
 /* This firebase database */
 import firebase from 'firebase';
 
- /* This is for Upload File */
+/* This is for Upload File */
 import FileModal from './FileModal';
 
 /* Style list */
@@ -18,11 +18,13 @@ import './MessageForm.css';
 import { Picker, emojiIndex } from 'emoji-mart';
 import 'emoji-mart/css/emoji-mart.css';
 
+const db = firebase.database()
 
 class MessageForm extends Component {
   state = {
     storageRef: firebase.storage().ref(),
-    typingRef: firebase.database().ref('userTyping'),
+    typingRef: db.ref('chat/userTyping'),
+    // typingRef: firebase.firestore().collection('titiktemu_chat').ref('userTyping'),
     uploadState: "",
     uploadTask: null,
     percentUploaded: 0,

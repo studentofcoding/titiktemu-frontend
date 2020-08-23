@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
-import firebase from 'firebase';
 import { connect } from 'react-redux';
 import { setCurrentChannel, setPrivateChannel } from '../actions';
 import { Menu, Icon, Modal, Form, Input, Button, Label } from 'semantic-ui-react';
+
+import firebase from 'firebase';
+
+const db = firebase.database()
 
 class Channels extends Component {
   state = {
@@ -12,9 +15,12 @@ class Channels extends Component {
     channels: [],
     channelName: "",
     channelDetails: "",
-    channelsRef: firebase.database().ref("channels"),
-    messagesRef: firebase.database().ref("messages"),
-    typingRef: firebase.database().ref("userTyping"),
+    channelsRef: db.ref("chat/channels"),
+    // channelsRef: firebase.firestore().collection('titiktemu_chat').get(),
+    messagesRef: db.ref("chat/messages"),
+    // messagesRef: firebase.firestore().collection('titiktemu_chat').get(),
+    typingRef: db.ref("chat/userTyping"),
+    // typingRef: firebase.firestore().collection('titiktemu_chat').get(),
     notifications: [],
     modal: false,
     firstLoad: true

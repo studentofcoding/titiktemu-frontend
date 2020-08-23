@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
-import firebase from 'firebase';
 import { Grid, Header, Dropdown, Image, Modal, Input, Button, Icon } from 'semantic-ui-react';
 
 /* Avatar Editor */
 import AvatarEditor from 'react-avatar-editor';
 
-import './UserPanel.css'
+import './UserPanel.css';
+
+import firebase from 'firebase';
+
+const db = firebase.database()
 
 class UserPanel extends Component {
   state = {
@@ -17,7 +20,8 @@ class UserPanel extends Component {
     uploadedCroppedImage: '',
     storageRef: firebase.storage().ref(),
     userRef: firebase.auth().currentUser,
-    usersRef: firebase.database().ref('users'),
+    usersRef: db.ref('users'),
+    // usersRef: firebase.firestore().collection('titiktemu_central').ref('users'),
     metadata: {
       contentType: 'image/jpeg'
     }

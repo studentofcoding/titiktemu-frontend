@@ -19,7 +19,9 @@ import chat from './components/App/community/chat/index';
 
 /*Import Windows and Apps */
 import course from './components/App/course';
-import home from './components/App/home';
+// import home from './components/App/home';
+// import DashboardApp from './components/App/dashboard';
+import Zoom from './components/App/liveVideo/zoom';
 
 const store = createStore(rootReducer, composeWithDevTools());
 
@@ -41,12 +43,14 @@ class Root extends Component {
         <div>
           {/*This is the function to Route to Page (via switch)*/}
           <Switch>
-            <Route exact path="/" component={home} />
+            {/* <Route exact path="/" component={DashboardApp} /> */}
+            <Route exact path="/" component={Zoom} />
             <Route exact path="/landingpage" component={landingpage} />
             <Route exact path="/chat" component={chat} />
             <Route exact path="/register" component={Register} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/course" component={course} />
+            {/* <Route exact path="/dashboard" component={DashboardApp} /> */}
             <Route component={nothinghere} />
           </Switch>
         </div>

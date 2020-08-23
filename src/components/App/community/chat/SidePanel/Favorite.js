@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
-import firebase from 'firebase';
 import { connect } from 'react-redux';
 import { setCurrentChannel, setPrivateChannel } from '../actions';
 import { Menu, Icon } from 'semantic-ui-react';
 
+import firebase from 'firebase';
+
+const db = firebase.database()
+
 class Favorite extends Component {
   state = {
     user: this.props.currentUser,
-    usersRef: firebase.database().ref('users'),
+    usersRef: db.ref('users'),
+    // usersRef: firebase.firestore().collection('titiktemu_central').ref('users'),
     activeChannel: '',
     favChannels: []
   };
@@ -22,6 +26,8 @@ class Favorite extends Component {
     this.state.usersRef
       .child(userId)
       .child('favorite')
+      .child('chat')
+      .child('channel')
       .on('child_added', snap => {
         const favChannel = {
           id: snap.key, ...snap.val()
@@ -34,6 +40,8 @@ class Favorite extends Component {
     this.state.usersRef
       .child(userId)
       .child('favorite')
+      .child('chat')
+      .child('channel')
       .on('child_removed', snap => {
         const channelToRemove = { id: snap.key, ...snap.val() };
         const filteredChannels = this.state.favChannels.filter(channel => {

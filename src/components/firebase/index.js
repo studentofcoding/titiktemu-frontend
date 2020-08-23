@@ -28,5 +28,6 @@ firebase.initializeApp({
     measurementId: "G-WHL25EZL4D"
 });
 // firebase.analytics();
+// const db = firebase.database()
 
 export default firebase;
