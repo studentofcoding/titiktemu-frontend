@@ -6,7 +6,7 @@
     "@appbaseio/reactivesearch": "^2.18.0",
     "@typeform/embed": "^0.9.3",
     "auth0-js": "^9.10.4",
-    "axios": "^0.18.1",
+    "axios": "^0.21.1",
     "bootstrap": "^4.3.1",
     "bulma": "^0.7.5",
     "emoji-mart": "^2.6.1",
